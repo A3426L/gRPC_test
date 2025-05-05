@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		72D262BD2DC78A3500038782 /* GRPCCodeGen in Frameworks */ = {isa = PBXBuildFile; productRef = 72D262BC2DC78A3500038782 /* GRPCCodeGen */; };
+		72D262BF2DC78A3500038782 /* GRPCCore in Frameworks */ = {isa = PBXBuildFile; productRef = 72D262BE2DC78A3500038782 /* GRPCCore */; };
+		72D262C12DC78A3500038782 /* GRPCInProcessTransport in Frameworks */ = {isa = PBXBuildFile; productRef = 72D262C02DC78A3500038782 /* GRPCInProcessTransport */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		72D2629E2DC707C100038782 /* gRPC_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gRPC_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +29,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72D262BD2DC78A3500038782 /* GRPCCodeGen in Frameworks */,
+				72D262BF2DC78A3500038782 /* GRPCCore in Frameworks */,
+				72D262C12DC78A3500038782 /* GRPCInProcessTransport in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +74,9 @@
 			);
 			name = gRPC_test;
 			packageProductDependencies = (
+				72D262BC2DC78A3500038782 /* GRPCCodeGen */,
+				72D262BE2DC78A3500038782 /* GRPCCore */,
+				72D262C02DC78A3500038782 /* GRPCInProcessTransport */,
 			);
 			productName = gRPC_test;
 			productReference = 72D2629E2DC707C100038782 /* gRPC_test.app */;
@@ -94,6 +106,9 @@
 			);
 			mainGroup = 72D262952DC707C100038782;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				72D262BB2DC78A3500038782 /* XCRemoteSwiftPackageReference "grpc-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 72D2629F2DC707C100038782 /* Products */;
 			projectDirPath = "";
@@ -324,6 +339,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		72D262BB2DC78A3500038782 /* XCRemoteSwiftPackageReference "grpc-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/grpc/grpc-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		72D262BC2DC78A3500038782 /* GRPCCodeGen */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 72D262BB2DC78A3500038782 /* XCRemoteSwiftPackageReference "grpc-swift" */;
+			productName = GRPCCodeGen;
+		};
+		72D262BE2DC78A3500038782 /* GRPCCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 72D262BB2DC78A3500038782 /* XCRemoteSwiftPackageReference "grpc-swift" */;
+			productName = GRPCCore;
+		};
+		72D262C02DC78A3500038782 /* GRPCInProcessTransport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 72D262BB2DC78A3500038782 /* XCRemoteSwiftPackageReference "grpc-swift" */;
+			productName = GRPCInProcessTransport;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 72D262962DC707C100038782 /* Project object */;
 }
