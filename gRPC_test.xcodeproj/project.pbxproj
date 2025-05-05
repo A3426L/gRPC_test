@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7238ADE92DC91CC500C1FAF8 /* NIO in Frameworks */ = {isa = PBXBuildFile; productRef = 7238ADE82DC91CC500C1FAF8 /* NIO */; };
+		7238ADEB2DC91CC500C1FAF8 /* NIOConcurrencyHelpers in Frameworks */ = {isa = PBXBuildFile; productRef = 7238ADEA2DC91CC500C1FAF8 /* NIOConcurrencyHelpers */; };
+		7238ADED2DC91CC500C1FAF8 /* NIOCore in Frameworks */ = {isa = PBXBuildFile; productRef = 7238ADEC2DC91CC500C1FAF8 /* NIOCore */; };
+		7238ADEF2DC91CC500C1FAF8 /* NIOEmbedded in Frameworks */ = {isa = PBXBuildFile; productRef = 7238ADEE2DC91CC500C1FAF8 /* NIOEmbedded */; };
+		7238ADF12DC91CC500C1FAF8 /* NIOFoundationCompat in Frameworks */ = {isa = PBXBuildFile; productRef = 7238ADF02DC91CC500C1FAF8 /* NIOFoundationCompat */; };
 		72D262BD2DC78A3500038782 /* GRPCCodeGen in Frameworks */ = {isa = PBXBuildFile; productRef = 72D262BC2DC78A3500038782 /* GRPCCodeGen */; };
 		72D262BF2DC78A3500038782 /* GRPCCore in Frameworks */ = {isa = PBXBuildFile; productRef = 72D262BE2DC78A3500038782 /* GRPCCore */; };
 		72D262C12DC78A3500038782 /* GRPCInProcessTransport in Frameworks */ = {isa = PBXBuildFile; productRef = 72D262C02DC78A3500038782 /* GRPCInProcessTransport */; };
@@ -29,9 +34,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7238ADED2DC91CC500C1FAF8 /* NIOCore in Frameworks */,
 				72D262BD2DC78A3500038782 /* GRPCCodeGen in Frameworks */,
+				7238ADEF2DC91CC500C1FAF8 /* NIOEmbedded in Frameworks */,
+				7238ADE92DC91CC500C1FAF8 /* NIO in Frameworks */,
+				7238ADF12DC91CC500C1FAF8 /* NIOFoundationCompat in Frameworks */,
 				72D262BF2DC78A3500038782 /* GRPCCore in Frameworks */,
 				72D262C12DC78A3500038782 /* GRPCInProcessTransport in Frameworks */,
+				7238ADEB2DC91CC500C1FAF8 /* NIOConcurrencyHelpers in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +87,11 @@
 				72D262BC2DC78A3500038782 /* GRPCCodeGen */,
 				72D262BE2DC78A3500038782 /* GRPCCore */,
 				72D262C02DC78A3500038782 /* GRPCInProcessTransport */,
+				7238ADE82DC91CC500C1FAF8 /* NIO */,
+				7238ADEA2DC91CC500C1FAF8 /* NIOConcurrencyHelpers */,
+				7238ADEC2DC91CC500C1FAF8 /* NIOCore */,
+				7238ADEE2DC91CC500C1FAF8 /* NIOEmbedded */,
+				7238ADF02DC91CC500C1FAF8 /* NIOFoundationCompat */,
 			);
 			productName = gRPC_test;
 			productReference = 72D2629E2DC707C100038782 /* gRPC_test.app */;
@@ -108,6 +123,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				72D262BB2DC78A3500038782 /* XCRemoteSwiftPackageReference "grpc-swift" */,
+				7238ADE72DC91CC500C1FAF8 /* XCRemoteSwiftPackageReference "swift-nio" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 72D2629F2DC707C100038782 /* Products */;
@@ -341,6 +357,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		7238ADE72DC91CC500C1FAF8 /* XCRemoteSwiftPackageReference "swift-nio" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-nio.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.82.1;
+			};
+		};
 		72D262BB2DC78A3500038782 /* XCRemoteSwiftPackageReference "grpc-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/grpc/grpc-swift.git";
@@ -352,6 +376,31 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		7238ADE82DC91CC500C1FAF8 /* NIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7238ADE72DC91CC500C1FAF8 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIO;
+		};
+		7238ADEA2DC91CC500C1FAF8 /* NIOConcurrencyHelpers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7238ADE72DC91CC500C1FAF8 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOConcurrencyHelpers;
+		};
+		7238ADEC2DC91CC500C1FAF8 /* NIOCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7238ADE72DC91CC500C1FAF8 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOCore;
+		};
+		7238ADEE2DC91CC500C1FAF8 /* NIOEmbedded */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7238ADE72DC91CC500C1FAF8 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOEmbedded;
+		};
+		7238ADF02DC91CC500C1FAF8 /* NIOFoundationCompat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7238ADE72DC91CC500C1FAF8 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOFoundationCompat;
+		};
 		72D262BC2DC78A3500038782 /* GRPCCodeGen */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 72D262BB2DC78A3500038782 /* XCRemoteSwiftPackageReference "grpc-swift" */;
