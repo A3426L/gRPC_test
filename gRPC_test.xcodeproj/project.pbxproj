@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7238ADE92DC91CC500C1FAF8 /* NIO in Frameworks */ = {isa = PBXBuildFile; productRef = 7238ADE82DC91CC500C1FAF8 /* NIO */; };
-		7238ADEB2DC91CC500C1FAF8 /* NIOConcurrencyHelpers in Frameworks */ = {isa = PBXBuildFile; productRef = 7238ADEA2DC91CC500C1FAF8 /* NIOConcurrencyHelpers */; };
-		7238ADED2DC91CC500C1FAF8 /* NIOCore in Frameworks */ = {isa = PBXBuildFile; productRef = 7238ADEC2DC91CC500C1FAF8 /* NIOCore */; };
-		7238ADEF2DC91CC500C1FAF8 /* NIOEmbedded in Frameworks */ = {isa = PBXBuildFile; productRef = 7238ADEE2DC91CC500C1FAF8 /* NIOEmbedded */; };
-		7238ADF12DC91CC500C1FAF8 /* NIOFoundationCompat in Frameworks */ = {isa = PBXBuildFile; productRef = 7238ADF02DC91CC500C1FAF8 /* NIOFoundationCompat */; };
-		72D262BD2DC78A3500038782 /* GRPCCodeGen in Frameworks */ = {isa = PBXBuildFile; productRef = 72D262BC2DC78A3500038782 /* GRPCCodeGen */; };
-		72D262BF2DC78A3500038782 /* GRPCCore in Frameworks */ = {isa = PBXBuildFile; productRef = 72D262BE2DC78A3500038782 /* GRPCCore */; };
-		72D262C12DC78A3500038782 /* GRPCInProcessTransport in Frameworks */ = {isa = PBXBuildFile; productRef = 72D262C02DC78A3500038782 /* GRPCInProcessTransport */; };
+		720489AF2DC9E86B0052A3DC /* SwiftProtobuf in Frameworks */ = {isa = PBXBuildFile; productRef = 720489AE2DC9E86B0052A3DC /* SwiftProtobuf */; };
+		720489B42DC9ED7A0052A3DC /* GRPCCodeGen in Frameworks */ = {isa = PBXBuildFile; productRef = 720489B32DC9ED7A0052A3DC /* GRPCCodeGen */; };
+		720489B62DC9ED7A0052A3DC /* GRPCCore in Frameworks */ = {isa = PBXBuildFile; productRef = 720489B52DC9ED7A0052A3DC /* GRPCCore */; };
+		720489B82DC9ED7A0052A3DC /* GRPCInProcessTransport in Frameworks */ = {isa = PBXBuildFile; productRef = 720489B72DC9ED7A0052A3DC /* GRPCInProcessTransport */; };
+		720489BB2DC9EF330052A3DC /* GRPCNIOTransportHTTP2 in Frameworks */ = {isa = PBXBuildFile; productRef = 720489BA2DC9EF330052A3DC /* GRPCNIOTransportHTTP2 */; };
+		720489BD2DC9EF330052A3DC /* GRPCNIOTransportHTTP2Posix in Frameworks */ = {isa = PBXBuildFile; productRef = 720489BC2DC9EF330052A3DC /* GRPCNIOTransportHTTP2Posix */; };
+		720489C02DC9F17E0052A3DC /* GRPCProtobuf in Frameworks */ = {isa = PBXBuildFile; productRef = 720489BF2DC9F17E0052A3DC /* GRPCProtobuf */; };
+		720489C22DC9F17E0052A3DC /* protoc-gen-grpc-swift in Frameworks */ = {isa = PBXBuildFile; productRef = 720489C12DC9F17E0052A3DC /* protoc-gen-grpc-swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,14 +34,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7238ADED2DC91CC500C1FAF8 /* NIOCore in Frameworks */,
-				72D262BD2DC78A3500038782 /* GRPCCodeGen in Frameworks */,
-				7238ADEF2DC91CC500C1FAF8 /* NIOEmbedded in Frameworks */,
-				7238ADE92DC91CC500C1FAF8 /* NIO in Frameworks */,
-				7238ADF12DC91CC500C1FAF8 /* NIOFoundationCompat in Frameworks */,
-				72D262BF2DC78A3500038782 /* GRPCCore in Frameworks */,
-				72D262C12DC78A3500038782 /* GRPCInProcessTransport in Frameworks */,
-				7238ADEB2DC91CC500C1FAF8 /* NIOConcurrencyHelpers in Frameworks */,
+				720489C02DC9F17E0052A3DC /* GRPCProtobuf in Frameworks */,
+				720489B42DC9ED7A0052A3DC /* GRPCCodeGen in Frameworks */,
+				720489B82DC9ED7A0052A3DC /* GRPCInProcessTransport in Frameworks */,
+				720489B62DC9ED7A0052A3DC /* GRPCCore in Frameworks */,
+				720489BB2DC9EF330052A3DC /* GRPCNIOTransportHTTP2 in Frameworks */,
+				720489BD2DC9EF330052A3DC /* GRPCNIOTransportHTTP2Posix in Frameworks */,
+				720489C22DC9F17E0052A3DC /* protoc-gen-grpc-swift in Frameworks */,
+				720489AF2DC9E86B0052A3DC /* SwiftProtobuf in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,14 +84,14 @@
 			);
 			name = gRPC_test;
 			packageProductDependencies = (
-				72D262BC2DC78A3500038782 /* GRPCCodeGen */,
-				72D262BE2DC78A3500038782 /* GRPCCore */,
-				72D262C02DC78A3500038782 /* GRPCInProcessTransport */,
-				7238ADE82DC91CC500C1FAF8 /* NIO */,
-				7238ADEA2DC91CC500C1FAF8 /* NIOConcurrencyHelpers */,
-				7238ADEC2DC91CC500C1FAF8 /* NIOCore */,
-				7238ADEE2DC91CC500C1FAF8 /* NIOEmbedded */,
-				7238ADF02DC91CC500C1FAF8 /* NIOFoundationCompat */,
+				720489AE2DC9E86B0052A3DC /* SwiftProtobuf */,
+				720489B32DC9ED7A0052A3DC /* GRPCCodeGen */,
+				720489B52DC9ED7A0052A3DC /* GRPCCore */,
+				720489B72DC9ED7A0052A3DC /* GRPCInProcessTransport */,
+				720489BA2DC9EF330052A3DC /* GRPCNIOTransportHTTP2 */,
+				720489BC2DC9EF330052A3DC /* GRPCNIOTransportHTTP2Posix */,
+				720489BF2DC9F17E0052A3DC /* GRPCProtobuf */,
+				720489C12DC9F17E0052A3DC /* protoc-gen-grpc-swift */,
 			);
 			productName = gRPC_test;
 			productReference = 72D2629E2DC707C100038782 /* gRPC_test.app */;
@@ -122,8 +122,10 @@
 			mainGroup = 72D262952DC707C100038782;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				72D262BB2DC78A3500038782 /* XCRemoteSwiftPackageReference "grpc-swift" */,
-				7238ADE72DC91CC500C1FAF8 /* XCRemoteSwiftPackageReference "swift-nio" */,
+				720489AD2DC9E86B0052A3DC /* XCRemoteSwiftPackageReference "swift-protobuf" */,
+				720489B22DC9ED7A0052A3DC /* XCRemoteSwiftPackageReference "grpc-swift" */,
+				720489B92DC9EF330052A3DC /* XCRemoteSwiftPackageReference "grpc-swift-nio-transport" */,
+				720489BE2DC9F17E0052A3DC /* XCRemoteSwiftPackageReference "grpc-swift-protobuf" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 72D2629F2DC707C100038782 /* Products */;
@@ -357,15 +359,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		7238ADE72DC91CC500C1FAF8 /* XCRemoteSwiftPackageReference "swift-nio" */ = {
+		720489AD2DC9E86B0052A3DC /* XCRemoteSwiftPackageReference "swift-protobuf" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/apple/swift-nio.git";
+			repositoryURL = "https://github.com/apple/swift-protobuf.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 2.82.1;
+				minimumVersion = 1.29.0;
 			};
 		};
-		72D262BB2DC78A3500038782 /* XCRemoteSwiftPackageReference "grpc-swift" */ = {
+		720489B22DC9ED7A0052A3DC /* XCRemoteSwiftPackageReference "grpc-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/grpc/grpc-swift.git";
 			requirement = {
@@ -373,48 +375,64 @@
 				minimumVersion = 2.1.2;
 			};
 		};
+		720489B92DC9EF330052A3DC /* XCRemoteSwiftPackageReference "grpc-swift-nio-transport" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/grpc/grpc-swift-nio-transport.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.3;
+			};
+		};
+		720489BE2DC9F17E0052A3DC /* XCRemoteSwiftPackageReference "grpc-swift-protobuf" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/grpc/grpc-swift-protobuf.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		7238ADE82DC91CC500C1FAF8 /* NIO */ = {
+		720489AE2DC9E86B0052A3DC /* SwiftProtobuf */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7238ADE72DC91CC500C1FAF8 /* XCRemoteSwiftPackageReference "swift-nio" */;
-			productName = NIO;
+			package = 720489AD2DC9E86B0052A3DC /* XCRemoteSwiftPackageReference "swift-protobuf" */;
+			productName = SwiftProtobuf;
 		};
-		7238ADEA2DC91CC500C1FAF8 /* NIOConcurrencyHelpers */ = {
+		720489B32DC9ED7A0052A3DC /* GRPCCodeGen */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7238ADE72DC91CC500C1FAF8 /* XCRemoteSwiftPackageReference "swift-nio" */;
-			productName = NIOConcurrencyHelpers;
-		};
-		7238ADEC2DC91CC500C1FAF8 /* NIOCore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 7238ADE72DC91CC500C1FAF8 /* XCRemoteSwiftPackageReference "swift-nio" */;
-			productName = NIOCore;
-		};
-		7238ADEE2DC91CC500C1FAF8 /* NIOEmbedded */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 7238ADE72DC91CC500C1FAF8 /* XCRemoteSwiftPackageReference "swift-nio" */;
-			productName = NIOEmbedded;
-		};
-		7238ADF02DC91CC500C1FAF8 /* NIOFoundationCompat */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 7238ADE72DC91CC500C1FAF8 /* XCRemoteSwiftPackageReference "swift-nio" */;
-			productName = NIOFoundationCompat;
-		};
-		72D262BC2DC78A3500038782 /* GRPCCodeGen */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 72D262BB2DC78A3500038782 /* XCRemoteSwiftPackageReference "grpc-swift" */;
+			package = 720489B22DC9ED7A0052A3DC /* XCRemoteSwiftPackageReference "grpc-swift" */;
 			productName = GRPCCodeGen;
 		};
-		72D262BE2DC78A3500038782 /* GRPCCore */ = {
+		720489B52DC9ED7A0052A3DC /* GRPCCore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 72D262BB2DC78A3500038782 /* XCRemoteSwiftPackageReference "grpc-swift" */;
+			package = 720489B22DC9ED7A0052A3DC /* XCRemoteSwiftPackageReference "grpc-swift" */;
 			productName = GRPCCore;
 		};
-		72D262C02DC78A3500038782 /* GRPCInProcessTransport */ = {
+		720489B72DC9ED7A0052A3DC /* GRPCInProcessTransport */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 72D262BB2DC78A3500038782 /* XCRemoteSwiftPackageReference "grpc-swift" */;
+			package = 720489B22DC9ED7A0052A3DC /* XCRemoteSwiftPackageReference "grpc-swift" */;
 			productName = GRPCInProcessTransport;
+		};
+		720489BA2DC9EF330052A3DC /* GRPCNIOTransportHTTP2 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 720489B92DC9EF330052A3DC /* XCRemoteSwiftPackageReference "grpc-swift-nio-transport" */;
+			productName = GRPCNIOTransportHTTP2;
+		};
+		720489BC2DC9EF330052A3DC /* GRPCNIOTransportHTTP2Posix */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 720489B92DC9EF330052A3DC /* XCRemoteSwiftPackageReference "grpc-swift-nio-transport" */;
+			productName = GRPCNIOTransportHTTP2Posix;
+		};
+		720489BF2DC9F17E0052A3DC /* GRPCProtobuf */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 720489BE2DC9F17E0052A3DC /* XCRemoteSwiftPackageReference "grpc-swift-protobuf" */;
+			productName = GRPCProtobuf;
+		};
+		720489C12DC9F17E0052A3DC /* protoc-gen-grpc-swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 720489BE2DC9F17E0052A3DC /* XCRemoteSwiftPackageReference "grpc-swift-protobuf" */;
+			productName = "protoc-gen-grpc-swift";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -7,50 +7,43 @@
 
 import SwiftUI
 import GRPCCore
-import GRPCCodeGen
-import GRPCInProcessTransport
+import GRPCNIOTransportHTTP2
+import GRPCProtobuf
 import NIO
 
 struct ContentView: View {
-    @State private var response = "未送信"
-
     var body: some View {
         VStack {
-            Text(response)
-            Button("Send Hello") {
+            Text("aiueo")
+            Button("test") {
                 Task {
-                    await sendHello()
+                    await run()
+                    print("runnn")
                 }
             }
         }
     }
-
-    func sendHello() async {
-        let group = MultiThreadedEventLoopGroup(numberOfThreads: 1)
-        let channel = try! GRPCChannelPool.with(
-            target: .host("127.0.0.1", port: 50051),
-            transportSecurity: .plaintext,
-            eventLoopGroup: group
-        )
-
-        let client = HelloServiceAsyncClient(channel: channel)
-        let request = HelloRequest.with {
-            $0.name = "SwiftUI"
-        }
-
-        do {
-            let reply = try await client.sayHello(request)
-            DispatchQueue.main.async {
-                response = reply.message
+        
+    func run() async {
+        do{
+            try await withGRPCClient(
+              transport: .http2NIOPosix(
+                target: .ipv4(host: "127.0.0.1", port: 31415),
+                transportSecurity: .plaintext
+              )
+            ) { client in
+              let greeter = HelloService.Client(wrapping: client)
+              let reply = try await greeter.sayHello(.with { $0.name = "Swift" })
+              print(reply.message)
             }
         } catch {
-            print("RPC error: \(error)")
+            await MainActor.run {
+                 print("エラー: \(error.localizedDescription)")
+            }
         }
-
-        try? await channel.close()
-        try? await group.shutdownGracefully()
     }
 }
+
 
 
 #Preview {
